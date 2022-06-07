@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="src/style/default.css">
+    <link rel="stylesheet" type="text/css" href="src/style/fullpage.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sh">
+        <img id="shpic" src="src/assets/sh.jpg" alt="">
+    </div>
+
+
+    <div id="fullpage">
+
+        <div class="section" id="section1">
+            <div class="title">
+                <h1>3 reasons why</h1>
+                <h2>Schaffhausen is perfect for your business location</h2>
+            </div>
+            <div class="map"></div>
+        </div>
+
+
+
+        <div class="section" id="network">
+            <div class="slider">
+                <div class="numberbox">
+                    <h1 id="value-step"></h1>
+                </div>
+                <div id="sliderbox">
+                    <div id="slider-step"></div>
+                </div>
+            </div>
+            <div class="infobox">
+                <h3 id="reason">Opportunities
+                    <img src="src/assets/info_icon.svg" alt="i" class="i_box" onmouseover="makeVisible(1)"
+                    onmouseout="hide(1)">
+                </h3>
+                <div id="infoText1" class="infoclass paddingText">
+                    <p>
+                        Want to start a business? Want to have a new job? Want to live in a great place for your kids to study? <br>Since Schaffhausen is so central, you have so many opportunities! </br>Enlarge the circle to see all these interesting places that are within reach.
+                    </p>
+                </div>
+                <div class="wrapper">
+
+                    <div class="wrap-1">
+                        <input type="radio" id="tab-1" name="tabs" class="radio">
+                        <label for="tab-1">
+                            <div id="box1">
+                                <div class="number" id="printstudiengang">70</div>
+                                <p> Degree Programs</p>
+                            </div>
+                            <div class="cross"></div>
+                        </label>
+                        <div class="content">
+                            <div id="studiengangbox">
+                                <div>...</div>
+                            </div>
+                            <div>...</div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="wrap-2">
+                        <input type="radio" id="tab-2" name="tabs" class="radio">
+                        <label for="tab-2">
+                            <div id="box2">
+                                <div class="number" id="printhochschule">0</div>
+                                <p> Universities</p>
+                            </div>
+                            <div class="cross"></div>
+                        </label>
+                        <div class="content">
+                            <div id="hochschulenbox">
+                                <div>...</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrap-3">
+                        <input type="radio" id="tab-3" name="tabs" class="radio">
+                        <label for="tab-3">
+                            <div id="box3">
+                                <div class="number" id="printfirma">90</div>
+                                <p></p> Companies</p>
+                            </div>
+                            <div class="cross"></div>
+                        </label>
+                        <div class="content">
+                            <div id="firmenbox">
+                                <div>...</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section" id="section3">
+            <div class="smalldist"> 
+                
+                <h3>Small distances
+                    <img style ="color: white;"src="src/assets/info_icon_white.svg" alt="i" class="i_box" onmouseover="makeVisible(2)"
+                        onmouseout="hide(2)">
+                </h3>
+                <div id="infoText2" class="infoclass paddingText">
+                    <p>
+                        After we've seen these interesting places that are within reach, let's play a game! <br>
+                        Since many people have no estimation of how central Schaffhausen is, we want to challenge you:<br>
+                        Can you find two big cities that are closer than Schaffhausen - Zürich?
+                    </p>
+                </div>
+            </div>
+            <div class="inputDistances">
+                <div class="row">
+                    <input type="text" id="from" class="outlinefield" placeholder="from">
+                    <p style="display: contents;">--</p>
+                    <input type="text" id="to" class="outlinefield" placeholder="to">
+                    <p style="display: contents;"> </p>
+                </div>
+                <div class="row">
+                    <button type="button" class="outlinebutton" name="button" onclick="calcRoute()">calculate</button>
+                </div>
+            </div>
+            <div id="distancepage"> </div>
+        </div>
+
+        <div class="section" id="tax" data-anchor="slide4">
+            <div class="TextLebeninSchaffhausen paddingTitle" id="schriftzug">
+                <h3>Taxes
+                    <img src="src/assets/info_icon.svg" alt="i" class="i_box" onmouseover="makeVisible(3)"
+                        onmouseout="hide(3)">
+                </h3>
+                <div id="infoText3" class="infoclass paddingText">
+                    <p>
+                        Now let’s look at the taxes. We compared the capitals of the 12 most northern cantons of
+                        switzerland. <br>
+                        Not only is Schaffhausen on the fourth place, it also has a very promising tendency.
+                    </p>
+                </div>
+            </div>
+            <div id="taxDiagram">
+            </div>
+        </div>
+
+
+
+        <div class="section">
+            <h3>Welcome to </h3>
+            <h1>Schaffhausen!</h1>
+            <img src="img/WappenCropped.svg" alt="" id="welcomeToSchaffhausen" width="auto" height="50%">
+        </div>
+
+        <divPackage>
+            <divBerater id="berater">
+                <p class="assist">Your personal contact</p>
+                <h4 class="assist">Leandro Robustelli</h4>
+                <div align="right" class="socialbtns">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/leandro-robustelli/" target="_blank"
+                                class="fa fa-lg fa-linkedin"></a>
+                        </li>
+                        <li>
+                            <a href="mailto://leandro.robustelli@generis.ch" target="_blank"
+                                class="fa fa-lg fa-envelope"></a>
+                        </li>
+                        <li>
+                            <a href="tel:+41526740611" target="_blank" class="fa fa-lg fa-phone"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </divBerater>
+            <img id="beraterpic" src="src/assets/beraterpic.png" alt="">
+            </divPackag>
+
+            <script src='lib/d3/d3.js'></script>
+            <script src='lib/lodash.js'></script>
+            <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+            <script src="https://unpkg.com/d3-simple-slider"></script>
+            <!-- <script src='src/histogram.js'></script>-->
+
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZpVk5XuLpSVSQPRRHNybTBT4Fznk9WJk&libraries=places"></script>
+            <script src='src/js/histogramDistances.js'></script>
+            <script src='src/js/fullpage.min.js'></script>
+            <script src='src/js/function.js'></script>
+            <script src="lib/topojson/topojson.js"></script>
+            <script src='src/js/swiss_map.js'></script>
+            <script src='src/js/steuersatz.js'></script>
+</body>
+
+</html>
